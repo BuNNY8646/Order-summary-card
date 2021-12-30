@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Pale-blue);
+    font-family: "Red Hat Display",sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: bottom;
+    justify-content: flex-end;
+}
+.container{
+    width: 350px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+.container section:first-child img{
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.box-1{
+    text-align: center;
+    width: 300px;
+}
+h2{
+    margin: 2rem 0rem 0rem 0rem;
+    font-weight: 800;
+}
+p{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    padding: 0 0rem;
+    margin: 1rem 0rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+ul li:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    color: var(--Desaturated-blue);
+}
+ul li:first-child img{
+    margin-right: 1rem;
+}
+ul li a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+ul li a:hover{
+    color: hsl(245, 75%, 72%);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bright-blue);
+    width: 300px;
+    margin: 2rem 0rem;
+    height:3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 0.5rem 0rem var(--Desaturated-blue);
+    transition: background-color 0s;
+}
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: hsl(245, 75%, 72%);
+}
+.cnc{
+    margin: 0rem 0rem 2rem 0rem;
+}
+.cnc a{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+.cnc a:hover{
+    color: #000;
+}
+span{
+    color: #000;
+    font-weight: 700;
+    width: max-content;
+}
+@media (max-width:1440px) {
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+}
